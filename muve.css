@@ -1,0 +1,260 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
+#content,html,body{
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0px;
+}
+#mainbody{
+    width: 100vw;
+    height: 100vh;
+}
+
+h1:hover{
+    text-decoration: underline;
+}
+
+h2:hover{
+    text-decoration: underline;
+    color: rgb(48,25,52);
+}
+
+
+#maincontainer{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+    background:linear-gradient(rgb(48,25,52),black 50%);
+    max-height: 100%;
+    overflow-y:scroll;
+    overflow-x: hidden;
+}
+
+.maincontainer-list{
+    width: 70vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.song-container-top{
+    width: 16vw;
+    height: 35vh;
+    background-color: rgb(77, 77, 77);
+    margin: 1%;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.song-container-top:hover{
+    transform: scale(1.1);
+}
+
+.song-container-resentRelease{
+    width: 27vw;
+    height: 15vh;
+    background-color: rgb(16, 16, 16);
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 0.5s;
+}
+.resent-release-name{
+    margin-left: 1vw;
+    margin-bottom: 0;
+    color: white;
+}
+
+.resent-release-date{
+    margin-left: 1vw;
+    margin-top: 0;
+    color: white;
+}
+
+.song-container-resentRelease:hover{
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    box-shadow: 0px 0px 50px 15px rgb(48,25,52);
+}
+
+.song-container-resentRelease img{
+    width: 8vw;
+    height: 11vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 1vw;
+    border-radius: 12.5%;
+}
+
+.song-container-popularArtist{
+    width: 8vw;
+    height: 15vh;
+    background-color: rgb(77, 77, 77);
+    margin: 1%;
+    border-radius: 50%;
+}
+
+.song-container-popularArtist img{
+    width: 8vw;
+    height: 15vh;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.song-container-popularArtist img:hover{
+    border-radius: 12.5%;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 50px 15px rgb(48,25,52);
+}
+
+.song-container-mood{
+    width: 9vw;
+    height: 15vh;
+    background-color: rgb(77, 77, 77);
+    margin: 1%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    border-radius: 25%;
+    display: inline-flex;
+    position: relative;
+}
+
+.song-container-mood img{
+    width: 9vw;
+    height: 15vh;
+    border-radius: 25%;
+    transition: all 0.3s;
+    opacity: 0.7;
+}
+
+.song-container-mood img:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 50px 15px rgb(48,25,52);
+    opacity: 0.7;
+}
+
+.mood-name h3{
+    margin: 0%;
+}
+
+.mood-name{
+    position: absolute;
+    top: 7vh;
+    left: 2.7vw;
+    color:white;
+}
+
+.song-container{
+    width: 11vw;
+    height: 25vh;
+    background:rgb(32, 32, 32);
+    margin: 1%;
+    border-radius: 12.5%;
+    transition: all 0.4s;
+    z-index: 1;
+    position: relative;
+}
+
+.play-button i{
+    position: absolute;
+    font-size: 3rem;
+    z-index: 100;
+    right: 1vw;
+    bottom: 2vh;
+    opacity: 0;
+    color: rgb(194, 1, 194);
+}
+
+.song-container:hover{
+    background-color: rgb(97, 97, 97);
+    cursor: pointer;
+}
+
+.song-container i:hover{
+    opacity: 0.8;
+}
+
+.song-container img{
+    height: 16vh;
+    width: 9vw;
+    margin-left: 1vw;
+    margin-top: 2vh;
+    border-radius: 12.5%;
+}
+
+.song-container h3{
+    color: white;
+    margin-top: 0px;
+    margin-left: 1vw;
+    margin-bottom: 0px;
+    overflow: hidden;
+    font-size: small;
+}
+.song-container h6{
+    color: white;
+    margin-left: 1vw;
+    margin-top: 0px;
+}
+
+
+#queue{
+    float: right;
+    width: 30vw;
+    background:linear-gradient(rgb(48,25,52),black 50%);
+    max-height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.queue-elements{
+    width: 25vw;
+    height: 10vh;
+    background:rgb(48,25,52);
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.queue-elements img{
+    margin-left: 1vw;
+    width: 5vw;
+    height: 8vh;
+}
+
+.serial-number{
+    color: white;
+    margin-left: 0.5vw;
+}
+
+.queue-element-song{
+    margin-left: 1vw;
+    margin-bottom: 0;
+    color: white;
+}
+
+.queue-element-artist{
+    margin-left: 1vw;
+    margin-top: 0;
+    color: white;
+}
+
+.queue-elements:hover{
+    background-color: black;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px 5px rgb(113, 37, 126);
+    cursor: pointer;
+}
